@@ -1,0 +1,14 @@
+{
+  "name": "mars_rover1",
+  "version": "1.0.0",
+  "description": "task",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rana",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.1"
+  }
+}
