@@ -100,6 +100,7 @@ It is called in the `command()` and check if (x,y) point is obstacles befor move
 ```
 ###### **marsroveriii** contains the m.js file and the test file (move.test.js).
 ![s](https://user-images.githubusercontent.com/33006064/187495847-84cc54de-0fa8-4398-a7e8-334ffaab3e2a.PNG)
+
 the main function in it is `moveRover(x,y)` recieve x,y point and calculate a command
 string for the rover that will safely move it to a given coordinate avoiding all obstacles.
 it moves in north and east directios avoiding all obstacles but needs some adjustments.
