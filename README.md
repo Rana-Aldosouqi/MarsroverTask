@@ -5,8 +5,7 @@
 ###### **MarsRover1** contains the MarsRover.js file and the test file (MarsRover.test.js).
 ![d](https://user-images.githubusercontent.com/33006064/187456621-a957bddf-c57e-4577-bfa0-3115464192a6.PNG)
 ###### There are 6 Functions in `MarsRover.js`
-1. ```js function command(xr,yr,dirc, instruction) {}
-```
+
 ```js
 var data = {
   title: 'JavaScript Templates',
