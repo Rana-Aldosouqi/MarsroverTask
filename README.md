@@ -7,13 +7,12 @@
 ###### There are 6 Functions in `MarsRover.js`
 
 ```js
-var data = {
-  title: 'JavaScript Templates',
-  license: {
-    name: 'MIT license',
-    url: 'https://opensource.org/licenses/MIT'
-  },
-  features: ['lightweight & fast', 'powerful', 'zero dependencies']
+function command(xr,yr,dirc, instruction) {
+if(rover.abst=="true"){
+    return `(${rover.x} , ${rover.y}) ${rover.direction} STOPPD`;
+   }else{
+    return `(${rover.x} , ${rover.y}) ${rover.direction}`;
+   };
 }
 ```
 ...This is the main Funcion it receive initial value of  (x,y) point and direction of the rover the 
