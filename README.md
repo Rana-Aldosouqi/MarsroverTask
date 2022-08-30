@@ -20,3 +20,84 @@ if(rover.abst=="true"){
 }
 ```
 
+##### 2.turnLeft()
+
+It is called in the `command()` if instrucion = 'l' to Rotate left by 90 degrees 
+
+```js
+ function turnLeft(rover) {
+    
+    switch(rover.direction){
+        case"North":
+             rover.direction="West";
+             break;
+        case"West":
+             rover.direction="South";
+             break;
+        case"South":
+             rover.direction="East";
+             break;
+        case"East":
+             rover.direction="North";
+             break;
+   
+    }
+  
+}   
+```
+##### 3.turnRight()
+
+It is called in the `command()` if instrucion = 'r' to Rotate right by 90 degrees 
+
+```js
+  function turnRight(rover) {
+
+    switch(rover.direction){
+        case"North":
+             rover.direction="East";
+             break;
+        case"East":
+             rover.direction="South";
+             break;
+        case"South":
+             rover.direction="West";
+             break;
+        case"West":
+             rover.direction="North";
+             break;
+   
+    }
+ 
+  }
+
+```
+##### 4.moveBackward(rover)
+##### 5.moveForward(rover)
+It is called in the `command()` if instrucion = 'f' or 'b';
+##### 6.isobstacles(rover)
+
+It is called in the `command()` and check if (x,y) point is obstacles befor move the rover and return true or false 
+
+```js
+  const obstacles = [
+        { x: 1, y: 4 },
+        { x: 3, y: 5 },
+        { x: 7, y: 4 }
+      ];
+    obstacles.forEach(position => {
+        if (rover.x==position.x && rover.y==position.y){
+            console.log('it is obstacle');
+            rover.abst="true";
+        }else{
+            console.log('it is not obstacle');
+            console.log(`i ${rover.x}, ${rover.y}`);
+            console.log(`i ${position.x}, ${position.y}`);
+        }
+        
+    });
+}
+
+```
+
+
+
